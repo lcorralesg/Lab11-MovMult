@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab11.MainPage">
+
+    <StackLayout Margin="20" Spacing="10">
+        <Label Text="Sueldo:" FontSize="18" />
+        <Entry Keyboard="Numeric" Text="{Binding Empleado.Sueldo}" Placeholder="Ingrese sueldo" />
+
+        <Label Text="Gratificación:" FontSize="18" />
+        <Entry Keyboard="Numeric" Text="{Binding Empleado.Gratificacion}" Placeholder="Ingrese gratificación" />
+
+        <Label Text="Descuento:" FontSize="18" />
+        <Entry Keyboard="Numeric" Text="{Binding Empleado.Descuento}" Placeholder="Ingrese descuento" />
+
+        <StackLayout>
+            <Label Text="Sueldo Neto:" FontSize="20" FontAttributes="Bold" />
+            <Label Text="{Binding Empleado.SueldoNeto}" FontSize="18" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Sueldo Neto Final:" FontSize="20" FontAttributes="Bold" />
+            <Label Text="{Binding Empleado.SueldoNetoFinal}" FontSize="18" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Impuesto:" FontSize="20" FontAttributes="Bold" />
+            <Label Text="{Binding Empleado.Impuesto}" FontSize="18" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
